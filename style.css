@@ -1,0 +1,247 @@
+.library-title {
+  font-size: 40px;
+  width: 320px;
+  margin: 0 auto 40px auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+body {
+  color: rgb(42, 86, 187);
+  background-color: #ffffed;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.library-form {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  font-size: 34px;
+  width: 200px;
+  height: 30px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #ffffed;
+}
+
+input:focus {
+  outline: none;
+}
+
+#input-title {
+  margin-right: 30px;
+}
+
+#input-read {
+  margin-right: 21px;
+}
+
+#input-pages {
+  margin-right: 16px;
+}
+.container-h {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-submit {
+  background-color: rgb(240, 102, 64);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+  margin: 40px auto 0 auto;
+  width: 80%;
+  border: none;
+}
+
+.btn-submit:hover {
+  opacity: 0.7;
+}
+
+.library-container {
+  display: flex;
+  gap: 20px;
+  height: 70vh;
+}
+
+.new-book {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #ffffed;
+}
+
+.cards {
+  padding: 10px;
+  width: 210px;
+  height: 324px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    rgb(157, 169, 195),
+    rgba(39, 81, 180, 0.728)
+  );
+  box-shadow: 10px 10px 20px #bebebe,
+    -10px -10px 10px #ffffff;
+}
+#card-title {
+  display: flex;
+  text-align: center;
+  /* margin-right: 20px; */
+}
+
+p {
+  margin: 0;
+}
+
+i {
+  margin: 0 10px 0 20px;
+}
+
+.library-form-title {
+}
+
+.container {
+  margin-left: 40px;
+}
+
+#btn-read {
+  position: absolute;
+  border: none;
+  top: 4px;
+  left: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(253, 253, 253, 0.902);
+}
+
+/* CSS */
+.btn-read {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  /* width: 90px; */
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.btn-read:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset,
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+}
+
+.btn-read:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-read:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.btn-clicked {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  /* width: 90px; */
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.btn-clicked-cards {
+  padding: 10px;
+  width: 210px;
+  height: 324px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    rgb(232, 169, 159),
+    rgb(240, 102, 64)
+  );
+  box-shadow: 10px 10px 20px #bebebe,
+    -10px -10px 10px #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-delete {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.container-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
